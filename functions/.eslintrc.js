@@ -13,7 +13,7 @@ module.exports = {
   rules: {
     "no-restricted-globals": ["error", "name", "length"],
     "prefer-arrow-callback": "error",
-    "quotes": ["error", "double", {"allowTemplateLiterals": true}],
+    "quotes": ["error", "double", { "allowTemplateLiterals": true }],
   },
   overrides: [
     {
@@ -24,5 +24,9 @@ module.exports = {
       rules: {},
     },
   ],
-  globals: {},
+  globals: {
+    module: "readonly",
+    exports: "readonly",
+    require: "readonly"
+  },
 };

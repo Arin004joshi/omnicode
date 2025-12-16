@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "omnicode-f652d"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }
